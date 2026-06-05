@@ -45,7 +45,7 @@ export default function FAQ() {
       <div className="container-px mx-auto max-w-3xl">
         <SectionTitle
           eyebrow="FAQ"
-          title="Questions? We\u2019ve Got Answers"
+          title="Questions? We Have Got Answers"
           subtitle="Everything you need to know before booking your next adventure with us."
         />
 

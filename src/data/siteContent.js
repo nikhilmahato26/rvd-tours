@@ -129,13 +129,13 @@ export const posters = [
 //  Popular destinations (8)
 // --------------------------------------------------------------
 export const destinations = [
-  { name: 'Kashmir', desc: 'Shikara rides, snow peaks & tulip gardens.', img: 'https://images.unsplash.com/photo-1566837497312-7be4ebb33f6b?auto=format&fit=crop&w=900&q=80' },
+  { name: 'Kashmir', desc: 'Shikara rides, snow peaks & tulip gardens.', img: 'https://images.pexels.com/photos/27497828/pexels-photo-27497828.jpeg' },
   { name: 'Manali', desc: 'Solang Valley, Rohtang & riverside cafes.', img: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=900&q=80' },
-  { name: 'Shimla', desc: 'The Mall, toy train & colonial heritage.', img: 'https://images.unsplash.com/photo-1597167071847-e67ca96b5b29?auto=format&fit=crop&w=900&q=80' },
+  { name: 'Shimla', desc: 'The Mall, toy train & colonial heritage.', img: 'https://images.pexels.com/photos/30550228/pexels-photo-30550228.jpeg' },
   { name: 'Leh Ladakh', desc: 'Pangong Lake, monasteries & high passes.', img: 'https://images.unsplash.com/photo-1581793745862-99fde7fa73d2?auto=format&fit=crop&w=900&q=80' },
-  { name: 'Mussoorie', desc: 'Queen of Hills, Kempty Falls & ropeway.', img: 'https://images.unsplash.com/photo-1591405351990-4726e331f141?auto=format&fit=crop&w=900&q=80' },
-  { name: 'Nainital', desc: 'Boating on the lake & snow-view points.', img: 'https://images.unsplash.com/photo-1623691841459-d8a30f9d6d6e?auto=format&fit=crop&w=900&q=80' },
-  { name: 'Auli', desc: 'Skiing slopes & panoramic Himalayan views.', img: 'https://images.unsplash.com/photo-1610116306796-6fea9f4fae38?auto=format&fit=crop&w=900&q=80' },
+  { name: 'Mussoorie', desc: 'Queen of Hills, Kempty Falls & ropeway.', img: 'https://images.pexels.com/photos/2070307/pexels-photo-2070307.jpeg' },
+  { name: 'Nainital', desc: 'Boating on the lake & snow-view points.', img: 'https://images.pexels.com/photos/16060830/pexels-photo-16060830.jpeg' },
+  { name: 'Auli', desc: 'Skiing slopes & panoramic Himalayan views.', img: 'https://images.pexels.com/photos/9963746/pexels-photo-9963746.jpeg' },
   { name: 'Goa', desc: 'Golden beaches, nightlife & water sports.', img: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=900&q=80' },
 ]
 
