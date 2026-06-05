@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #0b1f44;
+  --accent: #ff9f1c;
+  --secondary: #2563eb;
+  --sand: #f8fafc;
+  --glass: rgba(255, 255, 255, 0.75);
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--sand);
+  color: var(--primary);
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Avoid layout shift / horizontal scroll */
+#root {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+@layer components {
+  .glass {
+    background: var(--glass);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+  }
+
+  .glass-dark {
+    background: rgba(11, 31, 68, 0.55);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  .container-px {
+    @apply px-5 sm:px-8 lg:px-12 xl:px-20;
+  }
+
+  .text-gradient {
+    background: linear-gradient(120deg, #ff9f1c 0%, #ffb347 50%, #ff9f1c 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #eef2f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #0b1f44;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff9f1c;
+}
+
+/* Swiper overrides to match brand */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #0b1f44 !important;
+  background: rgba(255, 255, 255, 0.85);
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 9999px;
+  box-shadow: 0 10px 30px -10px rgba(11, 31, 68, 0.4);
+  backdrop-filter: blur(8px);
+  transition: all 0.25s ease;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: #ff9f1c;
+  color: #fff !important;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 18px !important;
+  font-weight: 700;
+}
+.swiper-pagination-bullet {
+  background: #0b1f44 !important;
+  opacity: 0.3;
+}
+.swiper-pagination-bullet-active {
+  background: #ff9f1c !important;
+  opacity: 1;
+  width: 26px;
+  border-radius: 6px;
+}
+
+/* Reduced motion respect */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Poster carousel */
+.poster-swiper .swiper-slide {
+  transform: scale(1);
+  opacity: 1;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.poster-swiper .swiper-wrapper {
+  align-items: center;
+}
+.poster-swiper {
+  padding-top: 8px;
+}
