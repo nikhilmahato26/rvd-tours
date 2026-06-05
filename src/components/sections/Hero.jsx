@@ -5,7 +5,7 @@ import { Autoplay, Pagination } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import {
-  Phone, MapPin, Globe, Instagram, ChevronDown,
+  Phone, MapPin, Instagram, ChevronDown,
   Compass, MessageCircle, FileText,
 } from 'lucide-react'
 import {
@@ -13,7 +13,6 @@ import {
 } from '../../data/siteContent'
 import { waLink, telLink, mapLink, scrollToId } from '../../utils/links'
 import { fadeUp, stagger, viewport } from '../../utils/motion'
-import Logo from '../ui/Logo'
 import Button from '../ui/Button'
 
 function ExperienceCard({ exp, index }) {
@@ -100,7 +99,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="mx-auto grid w-full max-w-4xl grid-cols-2 items-center gap-3 rounded-3xl glass-dark p-4 sm:grid-cols-3 sm:gap-4 sm:p-5"
+          className="mx-auto grid w-full max-w-4xl grid-cols-2 items-center gap-3 rounded-3xl glass-dark p-4 sm:gap-4 sm:p-5 lg:gap-8 lg:px-7"
         >
           {/* Left consultant */}
           <a href={telLink(consultants[0].phone)} className="flex items-center gap-3 text-left">
@@ -113,11 +112,6 @@ export default function Hero() {
               <p className="text-xs font-medium text-accent">{consultants[0].phone}</p>
             </div>
           </a>
-
-          {/* Center logo */}
-          <div className="order-last  col-span-2 flex justify-center sm:order-none sm:col-span-1">
-            <Logo light />
-          </div>
 
           {/* Right consultant */}
           <a href={telLink(consultants[1].phone)} className="flex items-center justify-end gap-3 text-right">
@@ -242,19 +236,12 @@ export default function Hero() {
         viewport={viewport}
         className="container-px relative z-10 mx-auto mt-12 max-w-[1400px]"
       >
-        <div className="grid grid-cols-2 gap-px overflow-hidden rounded-3xl glass-dark text-white shadow-card lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-px overflow-hidden rounded-3xl glass-dark text-white shadow-card sm:grid-cols-3">
           <a href={mapLink()} target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 p-5 transition hover:bg-white/5">
             <MapPin size={20} className="mt-0.5 shrink-0 text-accent" />
             <div>
               <p className="text-[11px] uppercase tracking-wide text-white/55">Address</p>
               <p className="mt-0.5 text-sm leading-snug text-white/90">{company.address.line3}</p>
-            </div>
-          </a>
-          <a href={company.websiteUrl} target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 p-5 transition hover:bg-white/5">
-            <Globe size={20} className="mt-0.5 shrink-0 text-accent" />
-            <div>
-              <p className="text-[11px] uppercase tracking-wide text-white/55">Website</p>
-              <p className="mt-0.5 text-sm leading-snug text-white/90">{company.website}</p>
             </div>
           </a>
           <a href={company.instagramUrl} target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 p-5 transition hover:bg-white/5">

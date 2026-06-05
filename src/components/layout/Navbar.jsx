@@ -32,7 +32,7 @@ export default function Navbar() {
         >
           <div className="container-px mx-auto flex max-w-[1400px] items-center justify-between py-3.5">
             <button onClick={(e) => handleNav(e, '#home')} aria-label="Home">
-              <Logo light={!scrolled} />
+              <Logo light={!scrolled} size="nav" />
             </button>
 
             <nav className="hidden items-center gap-1 lg:flex">
