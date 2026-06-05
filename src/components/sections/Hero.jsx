@@ -115,7 +115,7 @@ export default function Hero() {
           </a>
 
           {/* Center logo */}
-          <div className="order-last col-span-2 flex justify-center sm:order-none sm:col-span-1">
+          <div className="order-last  col-span-2 flex justify-center sm:order-none sm:col-span-1">
             <Logo light />
           </div>
 
