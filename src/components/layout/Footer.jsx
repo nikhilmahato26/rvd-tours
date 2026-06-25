@@ -20,7 +20,7 @@ export default function Footer() {
           <div className="lg:col-span-4">
             <Logo light />
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-white/65">
-              {company.subheading} From snow-capped peaks to golden beaches, we craft journeys you\u2019ll never forget.
+              RVD BEST QUALITY TRIP is the best travel agency in Delhi. From snow-capped peaks to golden beaches, we craft journeys you’ll never forget.
             </p>
             <a
               href={company.instagramUrl}

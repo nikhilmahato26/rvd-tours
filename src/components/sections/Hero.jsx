@@ -156,7 +156,7 @@ export default function Hero() {
 
           <motion.p
             variants={fadeUp}
-            className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg"
+            className="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-white/80 sm:text-lg"
           >
             {company.subheading}
           </motion.p>

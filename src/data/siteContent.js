@@ -13,17 +13,17 @@ export const company = {
   name: 'R.V.D Best Quality Trip',
   shortName: 'R.V.D',
   tagline: 'Travel & Tourism Company',
-  subheading: 'Creating unforgettable travel experiences across India.',
+  subheading: 'RVD BEST QUALITY TRIP is the best travel agency in Delhi. We offer amazing Manali tour packages, Shimla trips, and customized holidays across India. Our team ensures smooth transportation and comfortable hotel stays for a memorable experience.',
   website: 'www.rvdbestqualitytrip.com',
   websiteUrl: 'https://www.rvdbestqualitytrip.com',
   instagram: '@r.v.d_best_quality_trip',
   instagramUrl: 'https://instagram.com/r.v.d_best_quality_trip',
   address: {
-    line1: 'Plot No. 256, Shop No. 5',
-    line2: 'Sombazar Chowk, Gali No. 3',
-    line3: 'Jain Nagar, Delhi – 110081',
-    full: 'Plot No. 256, Shop No. 5, Sombazar Chowk, Gali No. 3, Jain Nagar, Delhi – 110081',
-    mapQuery: 'Jain Nagar, Delhi 110081',
+    line1: '188/13, Shiv Mandir, Wazirabad',
+    line2: 'Near Raju General Store & Mother Dairy',
+    line3: 'Wazirabad Mandiwala, Delhi – 110084',
+    full: '188/13, Shiv Mandir, Wazirabad, Near Raju General Store & Mother Dairy, Wazirabad Mandiwala, Delhi – 110084',
+    mapQuery: '188/13 shiv mandir wazirabad near Raju General Store & Mother Dairy, Wazirabad mandiwala, Delhi 110084',
   },
 }
 
@@ -123,6 +123,24 @@ export const posters = [
   { title: 'Tour Package 3', subtitle: 'Special Offer', price: 'Contact us', img: poster3, theme: 'ladakh' },
   { title: 'Tour Package 4', subtitle: 'Special Offer', price: 'Contact us', img: poster4, theme: 'goa' },
   { title: 'Tour Package 5', subtitle: 'Special Offer', price: 'Contact us', img: poster5, theme: 'shimla' },
+]
+
+// --------------------------------------------------------------
+//  Travel Videos (Reels / Shorts)
+// --------------------------------------------------------------
+export const travelVideos = [
+  {
+    id: 'video-1',
+    title: 'Scenic Himalayan Journeys',
+    desc: 'Winding roads, mist-laden valleys and pristine mountains captured on our recent group trip.',
+    url: 'https://res.cloudinary.com/dynbpb9u0/video/upload/v1782393783/WhatsApp_Video_2026-06-25_at_17.32.14_1_acsbdi.mp4',
+  },
+  {
+    id: 'video-2',
+    title: 'Adventures in the Snow',
+    desc: 'Unforgettable snow sliding, skiing and group memories with happy travelers.',
+    url: 'https://res.cloudinary.com/dynbpb9u0/video/upload/v1782394578/WhatsApp_Video_2026-06-25_at_17.32.19_mjiq08.mp4',
+  },
 ]
 
 // --------------------------------------------------------------
